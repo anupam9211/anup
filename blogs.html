@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+			#nav
+		{
+			overflow: hidden;
+			background-color:  #85C1E9 ;
+			margin: 0px;
+			padding: 0px;
+		}
+		#nav h2
+        {
+	    float: right;
+        }
+        #nav select
+        {
+        	width: 120px;
+        	height: 30px;
+        	color: red;
+        	margin-right: 40px;
+        	background-color:  #85C1E9;
+        }
+		#nav img
+		{
+		  margin: 5px;
+		  display: inline;
+          width: 90px;
+          height: 90px;
+		}
+		#navi
+		{
+			overflow: hidden;
+			background-color:#F30707;
+		}
+		#navi ul
+		{
+			
+			float: right;
+		}
+
+		#navi ul li
+		{
+			display: inline;
+			text-decoration: none;
+
+		}
+		#navi ul li a
+		{
+			text-decoration: none;
+			font-size: 20px;
+			margin-right: 36px;
+			font-family: arial;
+			color: white;
+
+		}
+		#navi ul li a:hover
+		{
+			color:#6B5FDF;
+			size: 20px;
+		}
+		#grid
+		{
+			display: grid;
+			width: 95%;
+			height: 900px;
+			margin: 20px auto;
+			height: 600px;
+			
+			grid-template-rows: 80px 80px 60px;
+			grid-template-columns: repeat(4,1fr); 
+			grid-gap: 20px;
+			height: 1fr;
+		}
+		#grid .header
+		{
+			
+			grid-column: -1/1;
+		}
+		#grid .header b
+		{
+			font-size: 25px;
+			font-family: normal;
+			color:#FFF301;
+		}
+		#grid .div1
+		{
+			background-color: purple;
+			grid-row: 2/4;
+
+		}
+		#grid .div2
+		{
+			background-color: black;
+			grid-row: 2/4;
+		}
+		#grid .slidebar
+		{
+			background-color:#CAEA54;
+			grid-column: 3/5;
+			grid-row: 2/4;
+		}
+		#grid .slidebar b
+		{
+			text-align: center;
+			color: grey;
+			font-family: normal;
+				font-size: 30px;
+				margin-left: 140px;
+				margin-top: 140px;
+		}
+		#grid .div3
+		{
+		
+		}
+		#grid .div4
+		{
+			
+		}
+		#grid .footer
+		{
+			background-color: white;
+			grid-column: -1/1;
+		}
+		#grid .slidebar2
+		{
+			background-color: #CAEA54;
+			grid-row: 4/5;
+			grid-column: 3/5;
+		}
+		#grid .slidebar2 b
+		{
+			text-align: center;
+			color: grey;
+			font-family: normal;
+			font-size: 30px;
+		}
+		#grid .footer b
+		{
+			background-color: white;
+			font-size: 30px;
+			font-family: normal;
+			margin-left: 40px;
+			color:#FFAA01;
+		}
+		#en  button
+		{
+		             width:10%;
+		             height:0px;
+		             color: yellow;
+		             height: 30px;
+		             background-color:#FFAA01;
+		             border-radius: 10%;
+					
+		}
+		#en a
+		{
+			text-decoration: none;
+
+		
+		}
+		
+	</style>
+</head>
+<body>
+<div id="nav">
+	<h2></h2>
+	<img src="lo.jpg">
+	<h2>
+		<select>
+			<option>lucknow</option>
+			<option>Amethy</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Varansi</option>
+		</select></h2>
+</div>
+<div id="navi">
+	<ul>
+		<li><a href="#">BLOG</a></li>
+		<li><a href="#">REAL DVENT</a></li>
+		<li><a href="#">INVITIES&RSVP</a></li>
+		<li><a href="#">IDEAS</a></li>
+		<li><a href="#">CREATE EVENT WEBSITE</a></li>
+		<li><a href="#">FOR CORPORATE</a></li>
+		<li><a href="#">TESTIMONIAL</a></li>
+		<li><a href="#">LIST WITH US</a></li>
+	</ul>
+</div>
+<div id="grid">
+	<div class="header"><b><center>SOMTHING FOR YOU</center></b></div>
+	<div class="div1"><a href="#"><img src="bd.jpg" height="170px;" width="100%"></a> </div>
+	<div class="div2"> <a href="#"> <img src="bdt.jpeg" height="170px;" width="100%"></a></div>
+	<div class="slidebar"> <b>We can provide you cake also</b> </div>
+	<div class="div3"><a href="#"><img src="wedd.jpeg" height="170px;" width="100%"></a> </div>
+	<div class="div4"><a href="#"><img src="weddi.jpeg" height="170px" width="100%;"></a></div>
+	<div class="slidebar2"><b>While planning a big fat indian wedding we tend to neglect small but essential things. Drafting Mehendi return gift ideas</b></div>
+	<div class="footer"><b>If there’s one event in life you dream to be perfect is your Wedding Day! Learn all the fun facts in our blogs about Indian weddings, wedding photography; top trending wedding venues, wedding dress, most preferred themes, common queries, unique styles and more for making yours the best wedding ever.
+
+</b></div>
+	
+</div>
+<div id="en">
+	<center><button > <a href="#">Enquire here</a> </button></center>
+</div>
+</body>
+</html>

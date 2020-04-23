@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#nav
+		{
+			overflow: hidden;
+			background-color:  #85C1E9 ;
+			margin: 0px;
+			padding: 0px;
+		}
+		#nav h2
+        {
+	    float: right;
+        }
+        #nav select
+        {
+        	width: 120px;
+        	height: 30px;
+        	color: red;
+        	margin-right: 40px;
+        	background-color:  #85C1E9;
+        }
+		#nav img
+		{
+		  margin: 5px;
+		  display: inline;
+          width: 90px;
+          height: 90px;
+		}
+		#navigation
+		{
+			overflow: hidden;
+			background-color: blue;
+		}
+		#navigation ul
+		{
+			float: right;
+		}
+		#navigation li
+		{
+			display: inline;
+
+		}
+		#navigation ul li a
+		{
+					text-decoration: none;
+					font-family: arial;
+					font-size: 25px;
+					color: white;
+					margin:10px;
+
+		}
+		#img
+		{
+			width: 100%;
+			height: 600px;
+		}
+		#ner
+		{
+			color: grey;
+			font-family: Arial;
+			font-size: 40px;
+
+		}
+		#main 
+		{
+			width: 90%;
+			margin: 50px auto;
+			color: white;
+			display: grid;
+			grid-template-rows: 200px 200px;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 30px; 
+		}
+		#main .div1
+		{
+			background:white;
+		}
+		#main .div1 img
+		{
+			margin: 20px;
+			margin-left: 60px;
+			border-radius: 25%;
+		}
+		#main .div1 p
+		{
+			color:grey;
+			text-align: center; 
+			font-family: arial;
+			font-size: 15px;
+
+		}
+		#main .div2
+		{
+			background-color:white;
+		}
+			#main .div2 img
+		{
+			margin: 20px;
+			margin-left: 60px;
+			border-radius: 100%;
+		}
+			#main .div2 p
+		{
+			color:grey;
+			text-align: center; 
+			font-family: arial;
+			font-size: 15px;
+
+		}
+		#main .div3
+		{
+			background-color: white;
+		}
+			#main .div3 img
+		{
+			margin: 20px;
+			margin-left: 60px;
+			border-radius: 100%;
+		}
+			#main .div3 p
+		{
+			color:grey;
+			text-align: center; 
+			font-family: arial;
+			font-size: 15px;
+
+		}
+		#main .div4
+		{
+			background-color:white;
+		}
+		#main .div4 img
+		{
+			margin-top: : 20px;
+
+			margin-left: 60px;
+			border-radius: 20%;
+		}
+			#main .div4 p
+		{
+			color:grey;
+			text-align: center; 
+			font-family: arial;
+			font-size: 15px;
+
+		}
+		#main .div5
+		{
+			background-color: white;
+		}
+		#main .div5 img
+		{
+			margin-top: : 20px;
+
+			margin-left: 20px;
+			border-radius: 20%;
+		}
+			#main .div5 p
+		{
+			color:grey;
+			text-align: center; 
+			font-family: arial;
+			font-size: 15px;
+
+		}
+		#main .div6
+		{
+			background-color: white;
+		}
+			#main .div6 p
+		{
+			color:grey;
+			text-align: center; 
+			font-family: arial;
+			font-size: 15px;
+		}
+		#main .div6 img
+		{
+			margin-top: : 20px;
+
+			margin-left: 20px;
+			border-radius: 20%;
+		}
+		#city
+		{
+			font-size: 40px;
+			font-family: arial;
+			color: grey;
+			text-align: center;
+		}
+#city h5
+{
+	color: red;
+	text-align: center;
+}
+#shr img
+{
+	margin: 10px;
+}
+#trr p
+{
+	        font-size: 40px;
+			font-family: arial;
+			color: grey;
+			text-align: center;
+}
+#trr h2
+{
+	 font-size: 40px;
+			font-family: arial;
+			color: grey;
+			text-align: center;
+}
+#couple
+{
+	 width: 75% auto;
+	margin:20px;
+	 display: grid;
+	 grid-gap: 20px;
+	 grid-template-columns:1fr 1fr 1fr;
+	 height: 145px;	 
+}
+#couple .div1
+{
+	color: red;
+	background-color: white
+}
+#couple .div1 p
+{
+	font-family: arial;
+	font-size: 25px;
+color: 	grey
+}
+#couple .div2
+{
+	background-color:white;
+}
+#couple .div2 p
+{
+	font-family: arial;
+	font-size: 25px;
+    color: 	grey
+}
+#couple .div3
+{
+	background-color: white;
+}
+#couple .div3 p
+{
+	font-family: arial;
+	font-size: 25px;
+    color: 	grey
+}
+.block {
+	width: 20%;
+	border:2px #F90404 ;
+	border-color:#F90404;
+	background-color:#4607FA;
+	color:white;
+	font-family: arial;
+	font-size: 25px;
+	cursor: pointer;
+}
+#our
+{
+	background-color: #E5E7E9 ;
+	width: 100%;
+}
+#our h2
+{
+	font-family: arial;
+	font-size: 35px;
+	color:#EC7063;
+	text-align: center;
+}
+#our h4
+{
+	color: #CA6F1E;
+	font-family: arial;
+	font-size: 20px;
+}
+#our img
+{
+  display: inline;
+}
+#our h3
+{
+	font-family: cursive;
+	color:grey;
+	text-align: center;
+	float: right;
+	column-count: 1;
+	width: 50%;
+	margin-right: 40px;
+	margin-top: 160px;
+}
+#fin h3
+{
+	font-family: arial;
+	font-size: 40px;
+	color: grey;
+	text-align: center;
+}
+#fin h2
+{
+	font-family: arial;
+	font-size: 60px;
+	color: grey;
+	text-align: center;
+}
+#tty
+{
+	width:75% ;
+	margin: 50px auto;
+	border: 2px ;
+	color: white;
+	display: grid;
+	grid-gap: 20px;
+
+	grid-template-columns: repeat(4,1fr);
+	height: 340px;
+	margin: 90px;
+
+}
+#tty img
+{
+	margin: 20px
+	width:25%;
+	display: grid;
+	height: 300px;
+	
+}
+#tty .div1
+{
+	background-color: white;
+}
+#tty .div1 img
+{
+	margin: 20px
+	width:25%;
+	height: 300px;
+	
+}
+#tty .div2
+{
+	background-color:white;
+}
+#tty .div3
+{
+	background-color:white;
+}
+#tty .div4
+{
+	background-color: white;
+}
+
+.rtt  button
+{
+	color:  #E62323;
+	width: 250px;
+	height: 40px;
+	background-color: white;
+	border:2px  solid red;
+	cursor: pointer;
+	font-family: arial;
+	font-size: 25px;
+}
+#birth
+{
+	width: 100%;
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	height: 400px;
+}
+#birth img
+{
+	width: 470px;
+	margin: 13px;
+
+	}
+	#birth p
+	{
+		font-family: arial;
+		color: grey;
+		font-size: 25px;
+	}
+	#h3
+	{
+		font-size: 40px;
+		font-family: Arial;
+		text-align: center;
+		color: grey;
+	}
+	#ever h2
+	{
+     text-align: center;
+     font-family: cursive;;
+     font-size: 50px;
+     color: grey
+	}
+	#ever h4
+	{
+     text-align: center;
+     font-family: cursive;;
+     font-size: 30px;
+     color: grey
+	}
+	#ever .rrr
+	{
+		width: 100%;
+		margin: 10px auto;
+	    background-color: #EFE0E0 ;
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+	#ever .rrr p
+	{
+		float: right;
+		font-family: arial;
+		font-size: 30px;
+		margin-top: 20px;
+		color: grey;
+	}
+	#follow h2
+	{
+		text-align: center;
+		color: grey;
+		font-family: arial;
+		font-size: 50px;
+	}
+     #follow img
+     {
+     	width: 100px;
+     	height: 100px;
+     	border-radius: 25%;
+     	margin: 60px;
+     }
+     #footer
+     {
+     	width: 100%;
+     	margin: 10px auto;
+     	
+     	display: grid;
+     	grid-template-columns: repeat(3,1fr);
+        height: 270px;
+     }
+     #footer
+     {
+     	background-color:#302727  ;
+
+     }
+     #footer p
+     {
+     	color: white;
+     	margin: 20px;
+     	font-family: Californian FB;
+     	font-size: 16px;
+
+     }
+     #rw
+     {
+     	background-color: #302727 
+     }
+     #rw h3
+     {
+     	font-family: Californian FB;
+     	font-size: 60px;
+
+     }
+</style>
+
+</head>
+<body>
+<div id="nav">
+	<h2></h2>
+	<img src="lo.jpg">
+	<h2>
+		<select>
+			<option>lucknow</option>
+			<option>Amethy</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Varansi</option>
+		</select></h2>
+</div>
+<div id="navigation">
+<ul>
+	<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/venues.html">Venues</a> </li>
+		<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/vender.html">Venders</a> </li>
+			<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/blogs.html">Blogs</a> </li>
+				<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/marrage/marrage.html">marraige</a></li>
+					<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/ideas.html">Ideas</a> </li>
+						<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/corporate.html">Corporate</a> </li>
+
+</ul>	
+</div>
+
+<div id="img">
+	<marquee  width="100%" direction="up" height="400px" scrolldelay="190">
+		<img src="rr.jpeg" width="100%" height="400px">
+		<img src="rer.jpeg" width="100%" height="400px">
+		<img src="te.jpeg" width="100%" height="400px">
+		<img src="rr.jpeg" width="100%" height="400px">
+		<img src="trt.jpeg" width="100%" height="400px">
+	</marquee>
+</div>
+<div id="ner">
+	<center><h3>Why Book With BookDventZ
+		<br>
+		<br>
+		We Make Your Dream Event Come True
+	</h3>
+	</center>
+</div>
+<br>
+<div id="main">
+	<div class="div1"><center><img src="sh.jfif" width="200px" height="100px" ></center><br><p>	
+Shortlist from list of
+recommended venues</p></div>
+
+	<div class="div2"><center><img src="lo.jfif"  width="200px" height="100px" ></center><p>Venue Visit<br>
+Visit the venue with
+our area experts</p></div>
+	<div class="div3"><center><img src="bl.jfif"  width="200px" height="100px" ></center><p>Inspiration & Ideas
+Send free e-invites, get inspired from real event pictures and ideas</p></div>
+
+	<div class="div4"><center><img src="hote.png"  width="200px" height="100px" ></center><p>22,573<br>
+Venues & Services</p></div>
+	<div class="div5"><center><img src="pay.jfif"  width="200px" height="100px" ></center><p>
+Secure Payment
+& Hassle Free Booking</p></div>
+	<div class="div6"><center><img src="happ.png"  width="200px" height="100px" ></center><p>580,321
++
+Happy Customers</p></div>
+</div>
+<div id="city">
+	<p><h2>Cities We Are Present In</h2>
+		
+   <h5> 30+</h5> <h3 >Cities Across India</h3></p> </div> <br> <div id="shr">
+<img src="bom.jfif"> <img src="jai.jfif"> <img src="ban.jfif"> <img
+src="pun.jfif"> <img src="del.jfif"> </div> 
+<div id="trr"> <h2>This Is How We
+Do It</h2><br><p> Real people. Real events. Real memories.</p> </div>
+ <br>
+<div id="couple"> 
+	<div class="div1"><center><img src="in.jpeg" width="290px"
+height="190px"></center><center><p>Haldi ceremony</p></center></div> 
+<div class="div2">
+	<center><img src="we.jpeg" width="290px"
+height="190px"></center><center><p>Western </p></center>
+</div> 
+<div class="div3">
+	<center><img src="ni.jpg" width="290px"
+height="190px"></center><center><p>Nikah</p></center></div> </div> <br> <br>
+<br> <br> <br> <br> <br> <center> <button class="block">SHOW
+MORE</button></center> 
+<div id="our"> <center><p><h2>Our Customers Love
+us</h2> <h4>And That's What Keep Us Going</h4></p></center> 
+
+<img src="ss.jpeg" height="500px">
+<h3>"Successful organizations depend on feedback, whether it comes from customers, the public, your own employees or for your events. Thanks to feedback forms, you can gather information and use it to build a better working environment, increase the efficiency of your company, and provide more a valuable service."</h3>	
+</div>
+<div id="fin">
+	<h2>Finest Venue For Every Occasion</h2>
+		<br>
+		<br>
+	<h3>Choose From Our 1000+ Venues</h3>
+</div>
+<div id="tty">
+	<div class="div1"> <a href="#"> <img src="jj.jpeg"></a></div>
+	<div class="div2"><a href="#"><img src="pp.jpeg"></a> </div>
+	<div class="div3"> <a href="#"><img src="yy.jpeg"></a> </div>
+</div>
+<div class="rtt">
+	<center><button>Show All Birthday</button></center>
+</div>
+<br>
+ <div id="h3">  <center><h3>Invites & RSVP</h3></center></div>
+<div id="birth">
+	<div class="div1"><img src="bi.jpeg"><center><p>Indore Birthday celebration</p></center></div>
+	<div class="div2"><img src="bir.jpeg"><center><p>Outdoor Birthday Celebration</p></center></div>
+	<div class="div3"><img src="birth.jpeg"><center><p>Out of India celebration</p></center></div>
+</div>
+<div id="ever">
+	<p><h2> Everything About Events</h2>
+		<br>
+<h4>Helping You Plan The Best One</h4></p>
+<br>
+<br>
+<div class="rrr">
+	<marquee width="100%" direction="up" height="400px" scrolldelay="190">
+	<img src="wed.jpeg">
+	<img src="wedd.jpeg">
+	<img src="weddi.jpeg">
+	<img src="weddin.jpeg">
+	<img src="wedding.jpeg">
+	 </marquee>
+	 <p>Recent / Trending Posts<br>
+2020 Marriage Dates: Hindu Muhurat Wedding Dates 2020<br>
+Court Marriage Procedure in India: Your 5 Step Guide to Apply for Court Marriage<br>
+DIY Ideas for Birthday Decoration at Home<br>
+Guide to Plan Your Brother’s or Sister’s Surprise Birthday Party<br>
+A Royal Casino Night in Mumbai by BookEventZ<br>
+List of Birthday Surprise Ideas for Your Boss</p></div>
+</div>
+<div id="follow">
+	<h2>Follow us </h2>
+	<br>
+	<br>
+	<center>
+	<img src="insta.jfif">
+	<img src="pin.png">
+    <img src="face.png"></center>
+</div>
+
+<div id="footer">
+<div class="div1"><p>Banquet Halls By Venues Type<br>
+Party halls in Lucknow<br>
+Banquet halls in Lucknow<br>
+5 Star Banquet halls in Lucknow<br>
+Resorts in Lucknow<br>
+Lounges in Lucknow<br>
+Party plots in Lucknow<br>
+Party lawns/ground in Lucknow<br>
+Marriage halls in Lucknow<br>
+Conference halls in Lucknow<br>
+AC banquet halls in Lucknow<br>
+Party places in Lucknow</p></div>
+	<div class="div2"><p><p>Banquet Halls By Venues Type<br>
+Party halls in Lucknow<br>
+Banquet halls in Lucknow<br>
+5 Star Banquet halls in Lucknow<br>
+Resorts in Lucknow<br>
+Lounges in Lucknow<br>
+Party plots in Lucknow<br>
+Party lawns/ground in Lucknow<br>
+Marriage halls in Lucknow<br>
+Conference halls in Lucknow<br>
+AC banquet halls in Lucknow<br></p></div>
+    <div class="div3"><p><p>Banquet Halls By Venues Type<br>
+Party halls in Lucknow<br>
+Banquet halls in Lucknow<br>
+5 Star Banquet halls in Lucknow<br>
+Resorts in Lucknow<br>
+Lounges in Lucknow<br>
+Party plots in Lucknow<br>
+Party lawns/ground in Lucknow<br>
+Marriage halls in Lucknow<br>
+Conference halls in Lucknow<br>
+AC banquet halls in Lucknow<br></p></div>
+</div>
+<div id="rw"><h3><center>Thankyou</center></h3></div>
+</body>
+</html>

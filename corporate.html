@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#nav
+		{
+			overflow: hidden;
+			background-color:  #85C1E9 ;
+			margin: 0px;
+			padding: 0px;
+		}
+		#nav h2
+        {
+	    float: right;
+        }
+        #nav select
+        {
+        	width: 120px;
+        	height: 30px;
+        	color: red;
+        	margin-right: 40px;
+        	background-color:  #85C1E9;
+        }
+		#nav img
+		{
+		  margin: 5px;
+		  display: inline;
+          width: 90px;
+          height: 90px;
+		}
+		#navigation
+		{
+			overflow: hidden;
+			background-color: blue;
+		}
+		#navigation ul
+		{
+			float: right;
+		}
+		#navigation li
+		{
+			display: inline;
+
+		}
+		#navigation ul li a
+		{
+					text-decoration: none;
+					font-family: arial;
+					font-size: 25px;
+					color: white;
+					margin:10px;
+
+		}
+		#bac 
+		{
+			background-image: url(cor.jpg);
+			background-size: cover;
+			height: 600px;
+		}
+		#bac h3
+		{
+			color: white;
+			text-align: center;
+			font-size: 30px;
+			font-family: arial;
+			margin: auto;
+			margin-bottom: 40px;
+		}
+		#bac h4
+		{
+			color: white;
+			text-align: center;
+			font-size: 30px;
+			font-family: arial;
+		}
+		#bac p
+		{
+			margin:120px;
+			display: inline;
+			color: white;
+		     font-size: 30px;
+		}
+		#get
+		{
+			
+			width: 90%;
+			margin:20px auto;
+			display: grid;
+			height: 400px;
+			grid-template-rows: repeat(5,1fr);
+			grid-template-columns: repeat(2,1fr);
+			box-shadow: 8px 2px 8px;
+			border-radius: 1%;
+		}
+		#get .div1
+		{
+			grid-column: -1/1;
+			background-color:#46C8E0;
+			border-radius: 1%;
+
+		}
+		#get .div1 p
+		{
+			text-align: center;
+			color: white;
+			margin: 20px;
+			font-size:30px;
+			font-family: Arial;
+		}
+		#get .div2 input
+		{
+			margin:20px;
+			width: 70%;
+			height: 30px;
+			border-radius: 10px;
+		}
+		#get .div3 input
+		{
+			margin:20px;
+			width: 70%;
+			height: 30px;
+			border-radius: 10px;
+		}
+		#get .div4 input
+		{
+			margin:20px;
+			width: 70%;
+			height: 30px;
+			border-radius: 10px;
+		}
+		#get .div5 input
+		{
+			margin:20px;
+			width: 70%;
+			height: 30px;
+			border-radius: 10px;
+		}
+		#get .div6 input
+		{
+			margin:20px;
+			width: 70%;
+			height: 30px;
+			border-radius: 10px;
+		}
+		#get .div7 input
+		{
+			margin:20px;
+			width: 70%;
+			height: 30px;
+			border-radius: 10px;
+		}
+		#get .div8
+		{
+			grid-column: 2/3;
+			margin: 20px;
+			margin-right: 220px;
+
+		}
+		#get .div8 button
+		{
+				border-radius: 10px;
+				width: 30%;
+				height: 30px;
+				background-color: #F20533;
+				float: right;
+		}
+		#get .div8 button a
+		{
+			text-decoration: none;
+			color:white;
+			font-family: arial;
+			font-size: 20px;
+		}
+		#bold b
+		{
+			text-align:center;
+			font-size: 80px;
+			font-family: Arial;
+			color: grey;
+		}
+		#grid 
+		{
+			display: grid;
+			width: 90%;
+			margin:40px auto;
+			
+			height: 600px;
+			grid-template-columns: repeat(3,1fr);
+			grid-gap: 20px;
+		}
+		#grid .div1 img
+		{
+			margin:20px;
+			border-radius: 50%;
+			width: 200px;
+			height: 100px;
+		}
+		#grid .div1 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 50px;
+		}
+		#grid .div2 img
+		{
+			margin:0px;
+			margin-left: 20px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid .div2 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#grid .div3 img
+		{
+			margin:0px;
+			margin-left: 50px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid .div3 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#grid .div4 img
+		{
+			margin:0px;
+			margin-left: 50px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid .div4 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#grid .div5 img
+		{
+			margin:0px;
+			margin-left: 50px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid .div5 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#grid .div6 img
+		{
+			margin:0px;
+			margin-left: 90px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid .div6 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#label p
+		{
+          text-align: center;
+          color: grey;
+          font-family: arial;
+          font-size: 50px;
+		}
+		#grid2 
+		{
+			display: grid;
+			width: 90%;
+			height: 800px;
+			margin:20px auto;
+		
+			grid-template-columns:repeat(2,1fr);
+		}
+		#grid2 .div1 img
+		{
+			margin:0px;
+			margin-left: 90px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid2 .div1 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#grid2 .div2 img
+		{
+			margin:0px;
+			margin-left: 90px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid2 .div2 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#grid2 .div3 img
+		{
+			margin:0px;
+			margin-left: 90px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid2 .div3 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#grid2 .div4 img
+		{
+			margin:0px;
+			margin-left: 90px;
+			border-radius: 50%;
+			width: 200px;
+			height: 150px;
+		}
+		#grid2 .div4 p
+		{
+			color: grey;
+			font-family: arial;
+			font-size: 15px;
+			margin:0px;
+			margin-left: 80px;
+		}
+		#service h2
+		{
+			text-align: center;
+			font-size: 60px;
+			font-family: arial;
+			color: grey;
+		}
+		#service h3
+		{
+			text-align: center;
+			font-size: 30px;
+			font-family: arial;
+			color: grey;
+		}
+		#ser
+		{
+			width: 100%;
+			margin:0px;
+			
+			display: grid;
+			grid-template-columns: repeat(6,1fr);
+			height: 200px;
+		}
+		#ser .div1 img
+		{
+			width: 70%;
+			height: 70%;
+			margin-left: 30px;
+		}
+		#ser .div1 p
+		{
+			margin-left: 90px;
+			font-size: 20px;
+			color: grey;
+		}
+		#ser .div2
+		{
+			background-color:#F0F0F0;
+		}
+			#ser .div2 img
+		{
+			width: 70%;
+			height: 70%;
+			margin-left: 30px;
+			margin-top: 10px;
+		}
+		#ser .div2 p
+		{
+			margin-left: 90px;
+			font-size: 20px;
+			color: grey;
+		}
+			#ser .div3 img
+		{
+			width: 70%;
+			height: 70%;
+			margin-left: 30px;
+		}
+		#ser .div3 p
+		{
+			margin-left: 90px;
+			font-size: 20px;
+			color: grey;
+		}
+			#ser .div4 img
+		{
+			width: 70%;
+			height: 70%;
+			margin-left: 30px;
+			margin-top: 10px;
+		}
+		#ser .div4 p
+		{
+			margin-left: 50px;
+			font-size: 20px;
+			color: grey;
+		}
+		#ser .div4
+		{
+			background-color: #F0F0F0;
+		}
+				#ser .div5 img
+		{
+			width: 70%;
+			height: 70%;
+			margin-left: 30px;
+		}
+		#ser .div5 p
+		{
+			margin-left: 90px;
+			font-size: 20px;
+			color: grey;
+		}
+					#ser .div6 img
+		{
+			width: 70%;
+			height: 70%;
+			margin-left: 30px;
+			margin-top: 10px;
+		}
+		#ser .div6 p
+		{
+			margin-left: 60px;
+			font-size: 20px;
+			color: grey;
+		}
+		#ser .div6
+		{
+			background-color:#F0F0F0;
+		}
+		#See h2
+		{
+			color:grey;
+			font-size: 60px;
+
+		}
+		#see 
+		{
+         
+         display: grid;
+         width: 100%;
+         margin:10px auto;
+        
+         grid-template-columns: repeat(3,1fr);
+         background-color: blue;
+
+		} 
+		#see  .div1
+		{
+			font-size: 30px;
+			font-family: arial;
+			margin:20px;
+			background-color: grey;
+			
+
+		}
+		#see .div1 p
+		{
+			color:white;
+
+		}
+		#see .div2 p
+		{
+			color:white;
+			
+		}
+		#see .div3 p
+		{
+			color:white;
+			
+		}
+		#see  .div2
+		{
+			font-size: 30px;
+			font-family: arial;
+			margin:20px;
+			background-color: grey;
+			
+		}
+		#see  .div3
+		{
+			font-size: 30px;
+			font-family: arial;
+			margin:20px;
+			background-color: grey;
+			
+
+		}
+		#footer
+ {
+ 	width: 100%;
+ 	margin: 0px;
+ 	height: 500px;
+ 	display: grid;
+ 	grid-template-columns:repeat(4,1fr);
+ 	grid-template-rows:repeat(2,1fr); 
+ 	background-color: black;
+ 	color: white;
+ }
+ #footer .div2 p
+ {
+margin:60px; 
+ }	
+ #footer .div3 p
+ {
+margin:60px; 
+ }
+ #footer .div4 img
+ {
+margin:20px; 
+ width: 300px;
+ height: 200px;
+ }	
+  #footer .div5 p
+  {
+  	margin: 20px;
+  }	
+
+	</style>
+</head>
+<body>
+<div id="nav">
+	<h2></h2>
+	<img src="lo.jpg">
+	<h2>
+		<select>
+			<option>lucknow</option>
+			<option>Amethy</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Varansi</option>
+		</select></h2>
+</div>
+<div id="navigation">
+<ul>
+	<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/venues.html">Venues</a> </li>
+		<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/vender.html">Venders</a> </li>
+			<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/blogs.html">Blogs</a> </li>
+				<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/marrage/marrage.html">marraige</a></li>
+					<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/ideas.html">Ideas</a> </li>
+						<li><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/corporate.html">Corporate</a> </li>
+
+</ul>	
+</div>
+<div id="bac">
+	<h3>BookDventZ for Business</h3>
+	<br>
+	<h4>Managing Corporate Dvents Was Never This Easy</h4>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>
+2000
+Corporate Tie ups</p>
+<p>
+	15+
+Cities
+</p>
+<p>
+	4,00,000+
+Events Organised
+</p>
+</div>
+<div id="get">
+	<div class="div1"><p>Get In Touch</p></div>
+	<div class="div2"><input type="text" name="text" placeholder="Your name"></div>
+	<div class="div3"><input type="text" name="text" placeholder="Moblie number"></div>
+	<div class="div4"><input type="text" name="text" placeholder="Company name"></div>
+	<div class="div5"><input type="text" name="text" placeholder="Refferal code"></div>
+	<div class="div6"><input type="text" name="text" placeholder="Email id"></div>
+	<div class="div7"><input type="text" name="text" placeholder="Comments"></div>
+	<div class="div8"><button><a href="file:///C:/Users/Anupam%20Upadhyay/Desktop/party/thank.html">Submit here</a></button></div>
+	</div>
+	<div id="bold"><b><center>Why BookDvent</center> </b></div>
+	<div id="grid">
+		<div class="div1"><img src="bul.png"><p>One Stop
+Solution
+<br>
+<br>
+End to end event planning from venues
+to ancillary services to its smooth execution</p></div>
+		<div class="div2"><img src="sav.jfif"><p>Big Saving
+			<br>
+			<br>Save up to 40% on all your
+event related cost</p> </div>
+		<div class="div3"><img src="mans.png"><p>Dedicated
+Event Manager<br>
+<br>
+A personal concierge (attendant) to aid
+the booking and event execution</p></div>
+		<div class="div4"><img src="dd.png"><p>Dedicated
+Corporate venues<br>
+<br>
+Specially curated venues for
+all kind of corporate events</p></div>
+		<div class="div5"><img src="gstr.png"><p>GST<br>
+Ready<br>
+<br>
+Claim upto 18% as credit on all your
+venue and event related bookings</p></div>
+		<div class="div6"><img src="tra.png"><p>Easy<br>
+tracking<br>
+<br>
+Track your bookings and finances via
+your personalized Corporate dashboard</p></div>
+
+	</div>
+	<div id="label">
+		<p>Get Access to Our Corporate Dashboard</p>
+	</div>
+	<br>
+	<br>
+	<div id="grid2">
+		<div class="div1"><img src="lap.png"><p>
+Microwebsite<br>
+<br>
+Host your event online and also sell tickets and more through our event microwebsite</p></div>
+		<div class="div2"><img src="lapt.png"><p>
+Booking engine<br>
+<br>
+We deliver the best-in-class technology that can handle the complete event lifecycle from start to finish
+
+</p></div>
+		<div class="div3"><img src="lapto.png"><p>Invoicing<br>
+			<br>
+Create and send out email event invoices with a login link so that the invoice can be paid online</p></div>
+		<div class="div4"><img src="laptop.png"><p>
+Invites & RSVP
+<br>
+<br>
+Send e-invites and rsvp for all your event. Choose from a wide list of invite templates</p></div>
+	</div>
+	<div id="service">
+		<h2>SERVICES</h2>
+		<h3>Make the most of your event with all the support required to run your event successfully.
+Choose from a wide range of services that come along</h3>
+	</div>
+	<div id="ser">
+		<div class="div1"><img src="ve.png"><br><p>Venues</p></div>
+		<div class="div2"><img src="ca.jfif"><p>Catering</p></div>
+		<div class="div3"><img src="wi.jfif"><p>Decor Setup</p></div>
+		<div class="div4"><img src="ar.jfif"><p>Artist Managment</p></div>
+		<div class="div5"><img src="trav.png"><p>Travel</p></div>
+		<div class="div6"><img src="eve.jfif"><p>Event Managment</p></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="See">
+	<center><h2>See what 1000's of our customer have to say</h2></center>	</div>
+	<div id="see">
+	<div class="div1"><p>Thankyou BookDevent ,it a chearful meeting with you and our ceo. We enjoyed the little get-together that you guyes arragniges. </p><br>
+		<br>
+		<b>Mr.Darwin</b></div>
+	<div class="div2"><p>Thankyou BookDevent ,it a chearful meeting with you and our ceo. We enjoyed the little get-together that you guyes arragniges.</p>
+	<br>
+	<br>
+	<b>Mr.Darwin</b></div>
+	<div class="div3"><p>Thankyou BookDevent ,it a chearful meeting with you and our ceo. We enjoyed the little get-together that you guyes arragniges.</p>
+	<br>
+	<br>
+	<b>Mr.Darwin</b></div>
+	</div>
+	<div id="footer">
+	 <div class="div1"><p>About BOOKEVENTZ
+	 	<br>
+	 	<br>
+India's Largest Event Booking Portal
+
+BookEventz (previously Urbanrestro) is India's largest event booking portal for booking venues, caterers, photographers and artists. We make event planning a much Easier, Smarter and Quicker experience for all.</p></div>
+	 <div class="div2"><p>About Us
+Team<br>
+Contact Us<br>
+FAQ<br>
+Create Event Website<br>
+List With Us</p></div>
+	 <div class="div3"><p>Media<br>
+Add Your Venue<br>
+Feedback<br>
+Real Events<br>
+Offers</p></div>
+	 <div class="div4"><img src="so.png" ></div>
+	 <div class="div5"><p>Banquet Halls By Venues Type<br>
+Party halls in Lucknow<br>
+Banquet halls in Lucknow<br>
+5 Star Banquet halls in Lucknow<br>
+Resorts in Lucknow<br>
+Lounges in Lucknow<br>
+Party plots in Lucknow<br>
+Party lawns/ground in Lucknow<br>
+Marriage halls in Lucknow<br>
+Conference halls in Lucknow<br>
+AC banquet halls in Lucknow<br>
+Party places in Lucknow</p></div>
+	 <div class="div6"><p>Banquet Halls By Cities<br>
+Banquet halls in Mumbai<br>
+Banquet halls in Pune<br>
+Banquet halls in Delhi NCR<br>
+Banquet halls in Bangalore<br>
+Banquet halls in Chennai<br>
+Banquet halls in Surat<br>
+Banquet halls in Vadodara<br>
+Banquet halls in Kolkata<br>
+Banquet halls in Goa<br>
+Banquet halls in Hyderabad<br></p></div>
+	 <div class="div7">Birthday Party Halls By Cities<br>
+Birthday Party Halls in Mumbai<br>
+Birthday Party Halls in Pune<br>
+Birthday Party Halls in Delhi NCR<br>
+Wedding halls in Ahmedabad<br>
+Birthday Party Halls in Bangalore<br>
+Birthday Party Halls in Chennai<br>
+Birthday Party Halls in Surat<br>
+Birthday Party Halls in Vadodara<br>
+Birthday Party Halls in Kolkata<br>
+Birthday Party Halls in Goa<br>
+</div>
+	 <div class="div8"><p>Birthday Party Halls By Areas<br>
+Birthday Party Halls in Hazratganj<br>
+Birthday Party Halls in Gomti Nagar<br>
+Birthday Party Halls in Charbagh<br>
+Birthday Party Halls in Indira Nagar<br>
+Birthday Party Halls in Kursi Road<br>
+Birthday Party Halls in Faizabad Road<br>
+Birthday Party Halls in Husainganj<br>
+Birthday Party Halls in Aminabad</p></div>
+</div>
+</body>
+</html>
